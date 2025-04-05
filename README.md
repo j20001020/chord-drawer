@@ -1,54 +1,22 @@
 # Chord Drawer
 
-Chord Drawer is a Python library that allows you to easily draw guitar chord diagrams. It provides a simple interface to visualize chords based on the fret and string information you provide.
-
-## Features
-
-- Draws guitar chord diagrams for any chord name.
-- Supports specifying which frets to press on each string.
-- Displays open strings and muted strings clearly.
+Chord Drawer 是一個用於繪製吉他和弦圖的 Python 函式庫。
 
 ## Installation
 
-You can install the Chord Drawer library using pip. First, clone the repository:
+使用 `pip` 安裝：
 
 ```bash
-git clone https://github.com/yourusername/chord-drawer.git
-cd chord-drawer
+pip install git+https://github.com/j20001020/chord-drawer.git
 ```
 
-Then, install the required dependencies:
+## Example
 
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-To use the Chord Drawer library, you can import it and call the `draw_chord` function with the desired chord name and fret information. Here’s an example:
 
 ```python
-from chord_drawer.chord_drawer import draw_chord
+from chord_drawer.chordDrawer import draw_chord
 
-# Draw a C major chord
-draw_chord("C", [-1, 3, 2, 0, 1, 0])
-
-# Draw a G major chord with a starting fret of 3
-draw_chord("G", [3, 2, 0, 0, 0, 3], start_fret=3)
+draw_chord("C", [-1, 3, 2, 0, 1, 0])  # C 和弦
+draw_chord("G", [3, 2, 0, 0, 0, 3], 3)  # G 和弦，從第 3 品開始
+draw_chord("F", [1, 3, 3, 2, 1, 1])  # F 和弦
 ```
-
-## Running Tests
-
-To ensure everything is working correctly, you can run the tests provided in the `tests` directory. Make sure you have pytest installed, then run:
-
-```bash
-pytest tests/test_chord_drawer.py
-```
-
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
