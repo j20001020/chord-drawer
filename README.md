@@ -14,7 +14,7 @@ pip install git+https://github.com/j20001020/chord-drawer.git
 
 
 ```python
-from chord_drawer.chordDrawer import draw_chord
+from chord_drawer import draw_chord
 
 draw_chord("C", [-1, 3, 2, 0, 1, 0])  # C 和弦
 draw_chord("G", [3, 2, 0, 0, 0, 3], 3)  # G 和弦，從第 3 品開始

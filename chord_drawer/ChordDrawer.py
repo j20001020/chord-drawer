@@ -1,10 +1,17 @@
-def draw_chord(chord_name, frets, start_fret=0):
+from typing import List
+
+def draw_chord(chord_name: str, frets: List[int], start_fret: int = 0) -> None:
     """
     繪製吉他和弦圖
-    
-    :param chord_name: 和弦名稱 (str)
-    :param frets: 每條弦按的品數 (list, 6 個數字，0 表示空弦，-1 表示不彈)
-    :param start_fret: 起始品數 (int, 預設為 0)
+
+    :param chord_name: 和弦名稱
+    :param frets: 每條弦按的品數，使用 6 個整數組成的 list：
+                  - 0 表示彈奏空弦 (○)
+                  - 正整數表示按下的品數
+                  - -1 表示該弦不彈（✕）
+    :param start_fret: 和弦圖的起始品數，預設為 0，表示從第一品開始畫
+
+    :return: 無傳回值
     """
     import matplotlib.pyplot as plt
     
