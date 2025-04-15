@@ -1,10 +1,10 @@
 # Chord Drawer
 
-Chord Drawer 是一個使用 matplotlib 繪製吉他和弦圖的 Python 工具
+Chord Drawer is a Python tool that uses matplotlib to **draw guitar chord diagrams**.
 
 ## Installation
 
-使用 `pip` 安裝：
+Install with `pip`:
 
 ```bash
 pip install git+https://github.com/j20001020/chord-drawer.git
